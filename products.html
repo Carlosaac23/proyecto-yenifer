@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="stylesheet" href="assets/styles/footer.css" />
     <link rel="stylesheet" href="assets/styles/products.css" />
-    <script src="assets/scripts/main.js" defer></script>
+    <script src="assets/scripts/products.js" defer></script>
     <title>Tic-Decor</title>
   </head>
   <body>
@@ -47,29 +47,15 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero__banner">
-          <div class="hero__content">
-            <h1 class="hero__title">Bienvenido a Tic-Decor</h1>
-            <p class="hero__subtitle">Soluciones tecnológicas y hardware de calidad para tu hogar y empresa</p>
-            <a href="products.html" class="hero__cta">Ver productos</a>
-          </div>
-          <div class="hero__image-container">
-            <img src="assets/images/first-img.png" alt="Banner Tic-Decor" class="hero__image" />
-          </div>
-        </div>
-      </section>
+    <div class="products__container">
+      <p class="products__container-path">Inicio <span class="blue">></span> Productos</p>
+      <h1 class="products__container-title">Productos</h1>
+    </div>
 
-      <section class="products">
-        <h2 class="products__title">Nuestros Productos Destacados</h2>
-        <div class="products__slider-container">
-          <button class="products__slider-arrow products__slider-arrow--left" id="sliderPrev">&#8592;</button>
-          <div class="products__slider" id="productsSlider">
-            <!-- Productos serán insertados por JS -->
-          </div>
-          <button class="products__slider-arrow products__slider-arrow--right" id="sliderNext">&#8594;</button>
-        </div>
+    <main>
+      <section class="products-grid">
+        <h1 class="products-grid__title">Todos los Productos</h1>
+        <div class="products-grid__container" id="productsGrid"></div>
       </section>
     </main>
 

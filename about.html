@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="stylesheet" href="assets/styles/about.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
     <title>Tic-Decor</title>
   </head>
   <body>
@@ -32,9 +33,9 @@
         <div class="bottom__header-links-container">
           <ul class="bottom__header-links">
             <a href="/"><li class="bottom__header-link">Inicio</li></a>
-            <li class="bottom__header-link">Productos</li>
-            <li class="bottom__header-link">Sobre Nosotros</li>
-            <li class="bottom__header-link">Contacto</li>
+            <a href="products.html"><li class="bottom__header-link">Productos</li></a>
+            <a href="about.html"><li class="bottom__header-link">Sobre Nosotros</li></a>
+            <a href="contact.html"><li class="bottom__header-link">Contacto</li></a>
           </ul>
         </div>
         <div class="bottom__header-user">
@@ -52,16 +53,74 @@
       </div>
 
       <div class="first">
-        <h2 class="first__title">Una familia que sigue creciendo</h2>
-        <p class="first__description">
-          Nuestro objetivo principal es satisfacer las necesidades del mercado doméstico, ofreciendo computadoras y hardware de alta calidad a precios
-          competitivos a clientes no corporativos, a través de nuestra amplia sala de exposición en el centro de Melbourne y nuestra tienda en línea. La gestión
-          de nuestra tienda fomenta una sólida orientación al cliente entre nuestro personal. Preferimos cultivar relaciones a largo plazo con nuestros clientes
-          antes que lograr ventas rápidas, como lo demuestra nuestro éxito a largo plazo.
-        </p>
+        <div class="first__left">
+          <h2 class="first__title">Una familia que sigue creciendo</h2>
+          <p class="first__description">
+            Nuestro objetivo principal es satisfacer las necesidades del mercado doméstico, ofreciendo computadoras y hardware de alta calidad a precios
+            competitivos a clientes no corporativos, a través de nuestra amplia sala de exposición en el centro de Melbourne y nuestra tienda en línea. La
+            gestión de nuestra tienda fomenta una sólida orientación al cliente entre nuestro personal. Preferimos cultivar relaciones a largo plazo con
+            nuestros clientes antes que lograr ventas rápidas, como lo demuestra nuestro éxito a largo plazo.
+          </p>
+        </div>
 
-        <img src="assets/images/first-image.png" alt="" class="first__img" />
+        <div class="first__right">
+          <img src="assets/images/first-img.png" alt="" class="first__img" />
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="second__left">
+          <img src="assets/images/second-img.png" alt="" class="second__img" />
+        </div>
+        <div class="second__right">
+          <div class="second__titles">
+            <img src="assets/images/logo.png" alt="" class="second__img-title" />
+            <h2 class="second__title">tic-decor.com</h2>
+          </div>
+          <p class="second__description">
+            Tic-Decor.com es un proveedor de bienes y servicios de TI, de propiedad Colombiana y con sede en La Loma, que opera desde 1991. Nuestra cartera de
+            clientes incluye particulares, pequeñas empresas, corporaciones y organizaciones gubernamentales. Ofrecemos soluciones integrales de TI para
+            empresas, centradas en hardware de alta calidad y un servicio al cliente excepcional.
+          </p>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="third__left">
+          <h2 class="third__title">Ahora estás en buenas manos</h2>
+          <p class="third__description">
+            En nuestro e-commerce tech, no solo compras productos: inviertes en confianza, calidad y soporte experto. Cada dispositivo que ves aquí ha sido
+            seleccionado cuidadosamente para ofrecerte lo mejor en innovación, rendimiento y garantía. Estamos aquí para acompañarte en cada paso, desde tu
+            primera compra hasta el último clic.
+          </p>
+        </div>
+
+        <div class="third__right">
+          <img src="assets/images/third-img.png" alt="" class="third__img" />
+        </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Logo Tic-Decor" class="footer__logo" />
+          <span class="footer__brand-name">Tic-Decor</span>
+        </div>
+        <div class="footer__links">
+          <a href="/" class="footer__link">Inicio</a>
+          <a href="products.html" class="footer__link">Productos</a>
+          <a href="about.html" class="footer__link">Sobre Nosotros</a>
+          <a href="contact.html" class="footer__link">Contacto</a>
+        </div>
+        <div class="footer__social">
+          <img src="assets/images/facebook.svg" alt="Facebook" class="footer__social-icon" />
+          <img src="assets/images/instagram.svg" alt="Instagram" class="footer__social-icon" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 Tic-Decor. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>

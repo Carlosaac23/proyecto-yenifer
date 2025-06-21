@@ -69,3 +69,45 @@
   border-radius: 50%;
   width: 36px;
 }
+
+@media (max-width: 1024px) {
+  .top__header,
+  .bottom__header {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .top__header,
+  .bottom__header {
+    padding: 0 16px;
+  }
+  .bottom__header {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .bottom__header-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .bottom__header-user {
+    gap: 12px;
+  }
+  .bottom__header-logo {
+    width: 90px;
+  }
+  .profile {
+    width: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .top__header,
+  .bottom__header {
+    padding: 0 6px;
+  }
+  .bottom__header-logo {
+    width: 60px;
+  }
+}

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="stylesheet" href="assets/styles/footer.css" />
-    <link rel="stylesheet" href="assets/styles/products.css" />
-    <script src="assets/scripts/main.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/contact.css" />
+    <script src="assets/scripts/contact.js" defer></script>
     <title>Tic-Decor</title>
   </head>
   <body>
@@ -47,29 +47,55 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero__banner">
-          <div class="hero__content">
-            <h1 class="hero__title">Bienvenido a Tic-Decor</h1>
-            <p class="hero__subtitle">Soluciones tecnológicas y hardware de calidad para tu hogar y empresa</p>
-            <a href="products.html" class="hero__cta">Ver productos</a>
-          </div>
-          <div class="hero__image-container">
-            <img src="assets/images/first-img.png" alt="Banner Tic-Decor" class="hero__image" />
-          </div>
-        </div>
-      </section>
+    <div class="contact__container">
+      <p class="contact__container-path">Inicio <span class="blue">></span> Contacto</p>
+      <h1 class="contact__container-title">Contacto</h1>
+    </div>
 
-      <section class="products">
-        <h2 class="products__title">Nuestros Productos Destacados</h2>
-        <div class="products__slider-container">
-          <button class="products__slider-arrow products__slider-arrow--left" id="sliderPrev">&#8592;</button>
-          <div class="products__slider" id="productsSlider">
-            <!-- Productos serán insertados por JS -->
-          </div>
-          <button class="products__slider-arrow products__slider-arrow--right" id="sliderNext">&#8594;</button>
+    <main>
+      <section class="contact">
+        <h1 class="contact__title">Contáctanos</h1>
+        <div class="contact__form-switcher">
+          <label for="formType" class="contact__form-label">Selecciona el tipo de formulario:</label>
+          <select id="formType" class="contact__form-select">
+            <option value="contact">Contacto</option>
+            <option value="service">Servicio Técnico / Reparación</option>
+          </select>
         </div>
+        <form id="contactForm" class="contact__form">
+          <div class="contact__form-group">
+            <label for="name" class="contact__form-label">Nombre</label>
+            <input type="text" id="name" class="contact__form-input" required />
+          </div>
+          <div class="contact__form-group">
+            <label for="email" class="contact__form-label">Correo electrónico</label>
+            <input type="email" id="email" class="contact__form-input" required />
+          </div>
+          <div class="contact__form-group">
+            <label for="message" class="contact__form-label">Mensaje</label>
+            <textarea id="message" class="contact__form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="contact__form-btn">Enviar</button>
+        </form>
+        <form id="serviceForm" class="contact__form" style="display: none">
+          <div class="contact__form-group">
+            <label for="nameService" class="contact__form-label">Nombre</label>
+            <input type="text" id="nameService" class="contact__form-input" required />
+          </div>
+          <div class="contact__form-group">
+            <label for="emailService" class="contact__form-label">Correo electrónico</label>
+            <input type="email" id="emailService" class="contact__form-input" required />
+          </div>
+          <div class="contact__form-group">
+            <label for="device" class="contact__form-label">Dispositivo</label>
+            <input type="text" id="device" class="contact__form-input" placeholder="Ej: Laptop, PC, Monitor..." required />
+          </div>
+          <div class="contact__form-group">
+            <label for="problem" class="contact__form-label">Descripción del problema</label>
+            <textarea id="problem" class="contact__form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="contact__form-btn">Solicitar Servicio</button>
+        </form>
       </section>
     </main>
 

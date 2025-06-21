@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Geist-Regular;
+  src: url('../fonts/Geist-Regular.ttf');
+}
+
+@font-face {
+  font-family: Geist-SemiBold;
+  src: url('../fonts/Geist-SemiBold.ttf');
+}
+
+body {
+  font-family: Geist-Regular;
+  font-size: 1rem;
+}

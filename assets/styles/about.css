@@ -1,0 +1,24 @@
+.about {
+  padding: 0 260px;
+}
+
+.about__path {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.blue {
+  color: #0156ff;
+}
+
+.about__title {
+  font-family: Geist-SemiBold;
+  font-size: 2rem;
+}
+
+.first {
+  width: 100%;
+  height: 681px;
+  background-color: #000000;
+  color: #ffffff;
+}

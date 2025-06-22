@@ -47,6 +47,84 @@ const products = [
     price: '$210.000',
     img: 'assets/images/webcam.png',
   },
+  {
+    name: 'Decoración de Oficina 1',
+    desc: 'Transforma tu espacio de trabajo con estilo y funcionalidad',
+    price: '$250.000',
+    img: 'assets/images/decoracion1.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 2',
+    desc: 'Ambientes modernos y personalizados para tu empresa',
+    price: '$300.000',
+    img: 'assets/images/decoracion2.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 3',
+    desc: 'Diseño y confort para potenciar la productividad',
+    price: '$280.000',
+    img: 'assets/images/decoracion3.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 4',
+    desc: 'Soluciones creativas para espacios reducidos',
+    price: '$220.000',
+    img: 'assets/images/decoracion4.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 5',
+    desc: 'Estética y funcionalidad en cada rincón',
+    price: '$260.000',
+    img: 'assets/images/decoracion5.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 6',
+    desc: 'Ambientes inspiradores para equipos creativos',
+    price: '$310.000',
+    img: 'assets/images/decoracion6.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 7',
+    desc: 'Espacios que motivan y mejoran el bienestar',
+    price: '$270.000',
+    img: 'assets/images/decoracion7.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 8',
+    desc: 'Diseño minimalista y elegante',
+    price: '$240.000',
+    img: 'assets/images/decoracion8.jpeg',
+  },
+  {
+    name: 'Decoración de Oficina 9',
+    desc: 'Personalización total para tu oficina',
+    price: '$350.000',
+    img: 'assets/images/decoracion9.jpeg',
+  },
+  {
+    name: 'Mantenimiento Preventivo PC',
+    desc: 'Limpieza y optimización de hardware para mayor durabilidad',
+    price: '$120.000',
+    img: 'assets/images/mantenimiento1.jpeg',
+  },
+  {
+    name: 'Mantenimiento Preventivo Laptop',
+    desc: 'Evita fallas y mejora el rendimiento de tu laptop',
+    price: '$140.000',
+    img: 'assets/images/mantenimiento2.jpeg',
+  },
+  {
+    name: 'Reparación de PC',
+    desc: 'Diagnóstico y solución de problemas de hardware',
+    price: '$180.000',
+    img: 'assets/images/reparacion1.jpeg',
+  },
+  {
+    name: 'Reparación de Laptop',
+    desc: 'Servicio técnico especializado para laptops',
+    price: '$200.000',
+    img: 'assets/images/reparacion2.jpeg',
+  },
 ];
 
 const slider = document.getElementById('productsSlider');
@@ -65,6 +143,9 @@ function renderProducts() {
             <div class="product-card__price">${product.price}</div>
             <button class="product-card__btn">Agregar al carrito</button>
           `;
+    card.querySelector('.product-card__btn').addEventListener('click', () => {
+      window.addToCart(product);
+    });
     slider.appendChild(card);
   });
   updateSlider();
